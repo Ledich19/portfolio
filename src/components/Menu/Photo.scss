@@ -1,0 +1,13 @@
+.photo{
+  color: #64F4AB;
+  padding: 10px;
+  background: #232427;
+
+  img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__name{}
+}

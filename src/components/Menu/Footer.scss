@@ -1,0 +1,12 @@
+.footer{
+  padding: 10px;
+  font-size: 1.5rem;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #64F4AB;
+  &__icon{
+    cursor: pointer;
+  }
+}

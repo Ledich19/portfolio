@@ -1,0 +1,11 @@
+.list{
+  flex: 1 0 auto;
+  font-weight: normal;
+ 
+
+  &__body{
+  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
