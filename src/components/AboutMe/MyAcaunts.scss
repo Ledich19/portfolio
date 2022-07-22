@@ -1,0 +1,91 @@
+.my-acaunts{
+  &__title{
+    position: relative;
+    // padding: 20px;
+    text-align: center;
+    height: 100px;
+  }
+  &__text{
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232427;
+
+    height: 50%;
+  }
+  &__btn{
+    z-index: 3;
+    content: 'my links';
+    position: absolute;
+    bottom:50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    color: #232427;
+    background: #64F4AB;
+    border-radius: 20px;
+   width: 40%;
+    padding: 5px 10px;
+cursor: pointer;
+transition: all 0.5s linear;
+ p {
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+    // color: #232427;
+    // display: inline-flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 30px;
+    // width: 30px;
+    // border-radius: 50%;
+    // background: #64F4AB;
+    &._active{
+      p {
+        overflow:visible;
+      }
+    
+    right: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    }
+  }
+  &__list{
+  
+  }
+  &__item{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: solid 1px #64F4AB;
+    transition: all 0.5s linear;
+
+    opacity: 0;
+  }
+
+  &__footer{
+    background: #3f4046;
+    transition: all 0.5s linear;
+    content: '';
+
+    position: relative;
+  
+    width: 100%;
+
+  height: 0px;
+
+
+  &._active{
+      display: block;
+      height: 50%;
+    }
+  }
+}

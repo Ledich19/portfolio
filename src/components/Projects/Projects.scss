@@ -1,0 +1,31 @@
+.app-projects{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 100vh;
+  overflow: auto;
+  gap: 2%;
+
+  &__title{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  margin-top: 20px;
+
+  }
+  &__column{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 0 auto;
+    
+    
+
+  }
+  &__height{
+    content: '';
+    height: 300px;
+  }
+}

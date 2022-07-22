@@ -1,0 +1,53 @@
+.app-about-me{
+  color: #64F4AB;
+  padding: 0 10px ;
+  background: rgba(0, 8, 2, 0.692);
+  height: 100%;
+  overflow: auto;
+  &__body{
+    display: flex;
+    margin-top: 40px;
+  }
+  &__title{
+    margin-top: 100px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &__quote{
+    position: relative;
+   padding: 30px 0;
+   padding-bottom: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #64f4ac85;
+    border-bottom: 1px solid #64F4AB;
+    &::before{
+      content: '';
+      position: absolute;
+      display: inline-block;
+height: 10px;
+width: 10px;border-radius: 50%;
+background: #64F4AB;
+bottom: 0;
+left: 50%;
+transform: translate(50%,50%);
+    }
+
+  }
+  &__column-pnoto{
+    width: 35%;
+  }
+  &__column-text{
+    width: 65%;
+  }
+}
+
+.column-pnoto{
+  &__photo{
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
