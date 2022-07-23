@@ -1,13 +1,12 @@
 import React from 'react'
 import './Item.scss'
 
-const Item = ({ className, text, icon }) => {
- 
+const Item = ({ text, icon }) => {
 
   return (
     <div className='item'>
       {icon}
-     <div>{text}</div>
+      <div>{text}</div>
     </div>
   )
 }

@@ -157,11 +157,11 @@ const Projects = ({ className, toglable }) => {
 
     const sliseArr = (arr, array_size) => {
 
-      const sliced_array = [];
+      const sliced_array = []
       for (let i = 0; i < arr.length; i += array_size) {
-        sliced_array.push(arr.slice(i, i + array_size));
+        sliced_array.push(arr.slice(i, i + array_size))
       }
-      console.log(sliced_array);
+      console.log(sliced_array)
       return sliced_array
     }
 
@@ -190,11 +190,11 @@ const Projects = ({ className, toglable }) => {
   }, [projectWidth])
 
   return (
-    <div onClick={toglable} className={`app-projects ${className}`}>
+    <div onClick={toglable} className={`app-projects ${ className }`}>
       <div className="app-projects__column">
-        <div className="app-projects__title">
+        {/* <div className="app-projects__title">
           my works
-        </div>
+        </div> */}
         {column1.map((p, i) => {
           return <Project
             key={i}
@@ -208,7 +208,7 @@ const Projects = ({ className, toglable }) => {
         })}
       </div>
 
-      <div style={column2.length !== 0 ? {} : {display: 'none'}} className="app-projects__column">{column2.map((p, i) => {
+      <div style={column2.length !== 0 ? {} : { display: 'none' }} className="app-projects__column">{column2.map((p, i) => {
         return <Project
           key={i}
           title={p.title}
@@ -220,21 +220,20 @@ const Projects = ({ className, toglable }) => {
         />
       })}</div>
 
-      <div style={column3.length !== 0 ? {} : {display: 'none'}} className="app-projects__column">
-      <div className="app-projects__height">
-          
-        </div>
+      <div style={column3.length !== 0 ? {} : { display: 'none' }} className="app-projects__column">
+        {/* <div className="app-projects__height">
+        </div> */}
         {column3.map((p, i) => {
-        return <Project
-          key={i}
-          title={p.title}
-          image={p.image}
-          tehnologies={p.tehnologies}
-          description={p.description}
-          gitLink={p.gitLink}
-          showLink={p.showLink}
-        />
-      })}
+          return <Project
+            key={i}
+            title={p.title}
+            image={p.image}
+            tehnologies={p.tehnologies}
+            description={p.description}
+            gitLink={p.gitLink}
+            showLink={p.showLink}
+          />
+        })}
       </div>
 
 

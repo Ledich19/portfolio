@@ -4,17 +4,14 @@ import List from './List'
 import Footer from './Footer'
 import './Menu.scss'
 
-const Menu = ({ className }) => {
+const Menu = () => {
   const [visible , setVisible] = useState(true)
- 
 
   return (
     <div className='app-menu'>
       <Button toglable={() => setVisible(!visible)} />
       {!visible || <List />}
       {!visible || <Footer/>}
-      
-      
     </div>
   )
 }
