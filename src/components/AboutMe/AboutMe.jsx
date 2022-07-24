@@ -4,11 +4,11 @@ import MyAcaunts from './MyAcaunts'
 import Text from './Text'
 
 
-const AboutMe = () => {
+const AboutMe = ({ id }) => {
 
 
   return (
-    <div className='app-about-me'>
+    <div id={id} className='app-about-me'>
       <div className="app-about-me__title">ABOUT ME</div>
       <div className="app-about-me__quote">A journey of a thousand miles begins with a single step</div>
       <div className="app-about-me__body">

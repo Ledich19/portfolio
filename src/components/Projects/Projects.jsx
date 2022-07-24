@@ -4,7 +4,7 @@ import './Projects.scss'
 import project01img from'./../../img/Project_01_img.jpg'
 
 
-const Projects = ({ className, toglable }) => {
+const Projects = ({ className, toglable, id }) => {
   const [column1, setColumn1] = useState([])
   const [column2, setColumn2] = useState([])
   const [column3, setColumn3] = useState([])
@@ -190,7 +190,7 @@ const Projects = ({ className, toglable }) => {
   }, [projectWidth])
 
   return (
-    <div onClick={toglable} className={`app-projects ${ className }`}>
+    <div id={id} onClick={toglable} className={`app-projects ${ className }`}>
       <div className="app-projects__column">
         {/* <div className="app-projects__title">
           my works

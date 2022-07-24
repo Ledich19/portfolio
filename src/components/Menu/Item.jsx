@@ -1,13 +1,13 @@
 import React from 'react'
 import './Item.scss'
 
-const Item = ({ text, icon }) => {
+const Item = ({ text, icon , href }) => {
 
   return (
-    <div className='item'>
+    <a href={href} className='item'>
       {icon}
       <div>{text}</div>
-    </div>
+    </a>
   )
 }
 

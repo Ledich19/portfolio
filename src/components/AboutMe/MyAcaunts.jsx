@@ -20,21 +20,21 @@ const MyAcaunts = () => {
       items.forEach((e, i) => {
         setTimeout(function () {
           e.style.opacity = '1'
-        }, 300 * ++i)
+        }, 100 * ++i)
       })
       setTimeout(function () {
         setFinish(true)
-      }, items.length * 300)
+      }, items.length * 100)
     } else {
       const items = document.querySelectorAll('.my-acaunts__item')
       items.forEach((e, i) => {
         setTimeout(function () {
           e.style.opacity = '0'
-        }, items.length * 300 - (300 * ++i))
+        }, items.length * 100 - (100 * ++i))
       })
       setTimeout(function () {
         setFinish(true)
-      }, items.length * 300)
+      }, items.length * 100)
     }
 
 

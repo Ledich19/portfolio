@@ -35,6 +35,7 @@ aside {
 
 html,
 body {
+  background: #232427;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -86,7 +87,10 @@ h6 {
 }
 
 
-
+#root {
+  height: 100%;
+  width: 100%;
+}
 .App {
   display: flex;
   align-items: stretch;
@@ -108,7 +112,7 @@ h6 {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
