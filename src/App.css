@@ -91,7 +91,21 @@ h6 {
   height: 100%;
   width: 100%;
 }
+/* @keyframes go-left-right {  
+  from {
+    opacity:0   ;           
+  }
+  to {
+    
+    opacity: 1; 
+  }
+}
+._animation {
+  animation: go-left-right 3s alternate;
+} */
 .App {
+ 
+
   display: flex;
   align-items: stretch;
   height: 100%;
@@ -99,8 +113,9 @@ h6 {
 
   background-image: url(https://images.wallpaperscraft.com/image/single/hacker_hood_code_214985_1920x1080.jpg) ;
   background-size: cover;
-  background-color: '#2D2E32';
+  background-position: center;
 }
+
 
 
 

@@ -150,8 +150,8 @@ const Projects = ({ className, toglable, id }) => {
   ]
 
   useEffect(() => {
-    const projectSpyse = document.querySelector('.app-projects')
-    setProjectWidth(projectSpyse.offsetWidth)
+    const projectSpyse = document.querySelector('.app-body')
+    setProjectWidth(projectSpyse - 150)
     const countColumn = (Math.floor(projectWidth / 500) > 3) ? 3 : Math.floor(projectWidth / 500)
     const itemsCount = Math.ceil(projects.length / countColumn)
 
