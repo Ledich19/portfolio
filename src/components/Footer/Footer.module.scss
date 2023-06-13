@@ -1,0 +1,41 @@
+$footerBgColor: #011627;
+$footerTextColor: #607b96;
+$footerActiveColor: #ffffff;
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $footerTextColor;
+  border: solid 1px $footerTextColor;
+  border-radius: 0 0 10px 10px ;
+
+
+  font-size: 1rem;
+  width: 100%;
+  background-color: $footerBgColor;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+.contacts{
+  display: flex;
+  align-items: center;
+}
+.link{
+  cursor: pointer;
+  display: inline-block;
+  border-right: solid 1px $footerTextColor;
+}
+.text{
+  border-right: solid 1px $footerTextColor;
+  padding: 17px 22px;
+}
+.icon{
+  font-size: 1.2rem;
+  padding: 17px 22px;
+  color: $footerTextColor;
+}
+.git{
+  border-left: solid 1px $footerTextColor;
+}

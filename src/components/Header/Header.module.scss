@@ -1,0 +1,53 @@
+$headerBgColor: #011627;
+$headerTextColor: #607b96;
+$headerActiveColor: #ffffff;
+
+.header {
+  width: 100%;
+  flex: 0 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: solid 1px $headerTextColor;
+  border-radius: 10px 10px 0 0;
+  background-color: $headerBgColor;
+  color: $headerTextColor;
+}
+.name {
+  padding: 17px 22px;
+  padding-right: 100px;
+  height: 100%;
+  border-right: solid 1px $headerTextColor;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLink {
+  cursor:pointer;
+  color: $headerTextColor;
+  text-decoration: none;
+  padding: 17px 31px;
+  border-right: solid 1px $headerTextColor;
+}
+.activeLink {
+  cursor:pointer;
+  text-decoration: none;
+  color: $headerActiveColor;
+  padding: 17px 31px;
+  border-right: solid 1px $headerTextColor;
+  border-bottom: 3px solid #FEA55F;;
+}
+.contact{
+  padding: 17px 22px;
+  border-left: solid 1px $headerTextColor;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
