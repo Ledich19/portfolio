@@ -1,16 +1,20 @@
-import { useParams } from 'react-router-dom';
 import s from './Hello.module.scss';
-import Hellos from '../../components/Hellos/Hellos';
-import HelloSpice from '../../components/HelloSpice/HelloSpice';
-import { useGetHellosQuery } from '../../services/HelloApi';
-import { ProductsType } from '../../app/types';
-import { useAppSelector } from '../../app/hooks';
 
 const Hello = () => {
-  
   return (
     <div className={s.hello}>
-     
+      <div className={s.box}>
+        Hi all. I am
+        <div className={s.name}>Aleksandr Chumachenko</div>
+        <div className={s.position}> &gt; Front-end developer</div>
+        <div className={s.git}> // you can also see it my Github page </div>
+        <span className={s.const}>const</span>
+        <span className={s.variable}>githubLink</span>
+        <span> = </span>
+        <a href="https://github.com/Ledich19" className={s.link}>
+          https://github.com/Ledich19
+        </a>
+      </div>
     </div>
   );
 };

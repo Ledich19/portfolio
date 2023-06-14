@@ -2,6 +2,48 @@ $mainBgColor: #011627;
 
 .hello {
   background: $mainBgColor;
+  color: white;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 24px;
   flex: 1 1 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 800px;
+}
+.name {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 81px;
+}
+.position {
+  color: #4d5bce;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 80px;
+}
+.git {
+  color: #607b96;
+  margin-bottom: 10px;
+}
+.const {
+  color: #4d5bce;
+}
+.variable {
+  color: #43d9ad;
+}
+.link {
+  color: #e99287;
 }
