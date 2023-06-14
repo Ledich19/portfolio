@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import s from './ProjectItem.module.scss';
 
 type Props = {
@@ -19,6 +18,7 @@ const ProjectItem = ({ item, index }: Props) => {
 
   return (
     <div className={s.item}>
+      
       <div className={s.title}>
         <span className={s.count}> Project {index + 1}</span>
         <span className={s.name}> // {title} </span>
@@ -31,6 +31,9 @@ const ProjectItem = ({ item, index }: Props) => {
 
         <div className={s.text}>
           <p>{description}</p>
+          <div className={s.tehnologies}>
+          {tehnologies.join('; ')}
+          </div>
           <div className={s.buttonBlock}>
             <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
               view-project

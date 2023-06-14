@@ -1,5 +1,3 @@
-import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import s from './ProjectBoard.module.scss';
 import ProjectItem from '../ProjectItem/ProjectItem';
 
