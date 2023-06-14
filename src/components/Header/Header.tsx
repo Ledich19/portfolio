@@ -18,7 +18,10 @@ const Header = () => {
             </NavLink>
           </li>
           <li className={s.item}>
-            <NavLink to="/cart" className={(info) => (info.isActive ? s.activeLink : s.navLink)}>
+            <NavLink
+              to="/projects"
+              className={(info) => (info.isActive ? s.activeLink : s.navLink)}
+            >
               _projects
             </NavLink>
           </li>

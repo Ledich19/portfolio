@@ -1,0 +1,60 @@
+$bgColor: #011627;
+$textColor: #607b96;
+$activeColor: #ffffff;
+
+.list {
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  border-left: solid 1px $textColor;
+  border-right: solid 1px $textColor;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  width: 210px;
+}
+.label {
+  padding: 0 22px;
+}
+.input {
+  margin-top: 17px;
+  margin-right: 20px;
+  &:checked + span {
+    color: $activeColor;
+  }
+}
+.titleBlock {
+  border-bottom: solid 1px $textColor;
+  width: 100%;
+  padding: 10px 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  transition: all 0.5s linear;
+  background: none;
+  border: none;
+}
+.open {
+  color: $activeColor;
+  transition: all 0.5s linear;
+}
+.close {
+  color: #607b96;
+  transition: all 0.5s linear;
+}
+.title_active {
+  color: $activeColor;
+}
+.elementsList {
+  transition: all 0.5s linear;
+
+  display: none;
+}
+.elementsList_active {
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
