@@ -1,6 +1,10 @@
 $mainBgColor: #011627;
+$textColor: #607b96;
 
 .hello {
+  border-left: solid 1px $textColor;
+  border-right: solid 1px $textColor;
+  user-select: none;
   background: $mainBgColor;
   color: white;
   font-family: 'Fira Code';

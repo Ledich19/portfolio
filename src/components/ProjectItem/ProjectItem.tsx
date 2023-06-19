@@ -18,9 +18,9 @@ const ProjectItem = ({ item, index }: Props) => {
 
   return (
     <div className={s.item}>
-      
       <div className={s.title}>
         <span className={s.count}> Project {index + 1}</span>
+        {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <span className={s.name}> // {title} </span>
       </div>
 
@@ -30,10 +30,10 @@ const ProjectItem = ({ item, index }: Props) => {
         </div>
 
         <div className={s.text}>
-          <p>{description}</p>
-          <div className={s.tehnologies}>
-          {tehnologies.join('; ')}
-          </div>
+          <p>
+            <div className={s.tehnologies}>{tehnologies.join('; ')}</div>
+            {description}
+          </p>
           <div className={s.buttonBlock}>
             <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
               view-project
