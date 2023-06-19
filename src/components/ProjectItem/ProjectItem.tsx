@@ -5,7 +5,7 @@ type Props = {
   item: {
     title: string;
     image: string;
-    tehnologies: string[];
+    technologies: string[];
     description: string;
     gitLink: string;
     deploy: string;
@@ -14,7 +14,7 @@ type Props = {
 };
 
 const ProjectItem = ({ item, index }: Props) => {
-  const { title, image, tehnologies, description, gitLink, deploy } = item;
+  const { title, image, technologies, description, gitLink, deploy } = item;
 
   return (
     <div className={s.item}>
@@ -31,16 +31,19 @@ const ProjectItem = ({ item, index }: Props) => {
 
         <div className={s.text}>
           <p>
-            <div className={s.tehnologies}>{tehnologies.join('; ')}</div>
+            <div className={s.technologies}>{technologies.join('; ')}</div>
             {description}
           </p>
           <div className={s.buttonBlock}>
             <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
               view-project
             </a>
-            <a className={s.button} rel="noreferrer" target="_blank" href={gitLink}>
-              <FaGithub />
-            </a>
+
+            {gitLink && (
+              <a className={s.button} rel="noreferrer" target="_blank" href={gitLink}>
+                <FaGithub />
+              </a>
+            )}
           </div>
         </div>
       </div>

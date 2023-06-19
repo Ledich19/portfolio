@@ -1,15 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import storeReducer from '../reducers/storeReducer';
-import formReducer from '../reducers/formReducer';
-import { shopApi } from '../services/shopApi';
+import projectsReducer from '../reducers/projects';
 
 export const store = configureStore({
   reducer: {
-    store: storeReducer,
-    form: formReducer,
-    [shopApi.reducerPath]: shopApi.reducer,
+    projects: projectsReducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(shopApi.middleware),
 });
 
 export type AppDispatch = typeof store.dispatch;
