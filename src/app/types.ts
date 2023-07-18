@@ -3,12 +3,12 @@ export type Technology =
   | 'css'
   | 'js'
   | 'typescript'
-  | 'REST API'
+  | 'REST'
   | 'scss'
   | 'React'
   | 'Redux'
   | 'GraphQl'
-  | 'Node JS'
+  | 'NodeJs'
   | 'WebSocket'
   | 'vite';
 

@@ -30,10 +30,10 @@ const ProjectItem = ({ item, index }: Props) => {
         </div>
 
         <div className={s.text}>
-          <p>
+          <div>
             <div className={s.technologies}>{technologies.join('; ')}</div>
             {description}
-          </p>
+          </div>
           <div className={s.buttonBlock}>
             <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
               view-project

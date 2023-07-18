@@ -27,7 +27,7 @@ const initialState: InitialState = {
     {
       title: 'Async race',
       image: 'asunk-race.png',
-      technologies: ['js', 'typescript', 'REST API', 'scss'],
+      technologies: ['js', 'typescript', 'REST', 'scss'],
       description:
         ' The server for them can be found in the repository https://github.com/mikhama/async-race-api#create-winner',
       gitLink: 'https://github.com/Ledich19/rs_asynk-race',
@@ -86,7 +86,7 @@ const initialState: InitialState = {
     {
       title: 'Battle ship',
       image: 'battle-ship.png',
-      technologies: ['Node JS', 'WebSocket'],
+      technologies: ['NodeJs', 'WebSocket', 'typescript'],
       description:
         'Working sea battle game with frontend and server. working sea battle game with frontend and server',
       gitLink: 'https://github.com/Ledich19/node-battle-ship',
@@ -95,7 +95,7 @@ const initialState: InitialState = {
     {
       title: 'File manager',
       image: 'console-app.png',
-      technologies: ['Node JS'],
+      technologies: ['NodeJs'],
       description:
         'Console application can copy move delete files. Archived cache fetch uses streams',
       gitLink: 'https://github.com/Ledich19/node-file-manager/pull/1',
@@ -104,7 +104,7 @@ const initialState: InitialState = {
     {
       title: 'node crud api',
       image: 'node-crud-api.png',
-      technologies: ['Node JS'],
+      technologies: ['NodeJs', 'typescript'],
       description: 'Node js server without frameworks. there is horizontal scaling using workers',
       gitLink: 'https://github.com/Ledich19/node-crud-api/pull/1',
       deploy: '',

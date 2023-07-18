@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import projectsReducer from '../reducers/projects';
+import technologiesSlice from '../reducers/sort';
 
 export const store = configureStore({
   reducer: {
     projects: projectsReducer,
+    technologies: technologiesSlice,
   },
 });
 
