@@ -8,6 +8,8 @@ export type Technology =
   | 'React'
   | 'Redux'
   | 'GraphQl'
+  | 'Node JS'
+  | 'WebSocket'
   | 'vite';
 
 export type Project = {

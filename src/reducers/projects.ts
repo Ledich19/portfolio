@@ -67,11 +67,11 @@ const initialState: InitialState = {
       deploy: 'https://ledich19-rss-online-store.netlify.app/',
     },
     {
-      title: 'Zombie in the house (board game)',
+      title: 'Zombie in the house ',
       image: 'zombie-in-the-house.png',
       technologies: ['React', 'Redux', 'typescript', 'scss', 'vite'],
       description:
-        'Based on the board game "Zombies in the House". There is a calculation of the path, you can’t go through the walls; match the original.',
+        '(board game) Based on the board game "Zombies in the House". There is a calculation of the path, you can’t go through the walls; match the original.',
       gitLink: 'https://github.com/Ledich19/rss_zombie-in-the-house-game',
       deploy: 'https://ledich19-rs-clone.netlify.app/',
     },
@@ -83,16 +83,40 @@ const initialState: InitialState = {
       gitLink: 'https://github.com/Ledich19/graphiql-app/tree/development',
       deploy: 'https://graphiql-star-wars.netlify.app/',
     },
+    {
+      title: 'Battle ship',
+      image: 'battle-ship.png',
+      technologies: ['Node JS', 'WebSocket'],
+      description:
+        'Working sea battle game with frontend and server. working sea battle game with frontend and server',
+      gitLink: 'https://github.com/Ledich19/node-battle-ship',
+      deploy: '',
+    },
+    {
+      title: 'File manager',
+      image: 'console-app.png',
+      technologies: ['Node JS'],
+      description:
+        'Console application can copy move delete files. Archived cache fetch uses streams',
+      gitLink: 'https://github.com/Ledich19/node-file-manager/pull/1',
+      deploy: '',
+    },
+    {
+      title: 'node crud api',
+      image: 'node-crud-api.png',
+      technologies: ['Node JS'],
+      description: 'Node js server without frameworks. there is horizontal scaling using workers',
+      gitLink: 'https://github.com/Ledich19/node-crud-api/pull/1',
+      deploy: '',
+    },
   ],
 };
 
 const projectsSlice = createSlice({
   name: 'projects',
   initialState,
-  reducers: {
-    setFormData(state, action) {},
-  },
+  reducers: {},
 });
 
-export const { setFormData } = projectsSlice.actions;
+// export const {} = projectsSlice.actions;
 export default projectsSlice.reducer;

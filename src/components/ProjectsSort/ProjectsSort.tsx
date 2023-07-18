@@ -8,6 +8,7 @@ import {
   SiRedux,
   SiGraphql,
   SiNodedotjs,
+  SiSocketdotio,
 } from 'react-icons/si';
 import { FaSortUp, FaSortDown } from 'react-icons/fa';
 import s from './ProjectsSort.module.scss';
@@ -51,6 +52,7 @@ const ProjectsSort = () => {
             <SiJavascript className={s.icon} /> Javascript
           </span>
         </label>
+
         <label htmlFor="SiTypescript" className={s.label}>
           <input value="ts" id="SiTypescript" className={s.input} type="checkbox" />
           <span>
@@ -64,6 +66,7 @@ const ProjectsSort = () => {
             <SiReact className={s.icon} /> React
           </span>
         </label>
+
         <label htmlFor="SiRedux" className={s.label}>
           <input value="redux" id="SiRedux" className={s.input} type="checkbox" />
           <span>
@@ -82,6 +85,13 @@ const ProjectsSort = () => {
           <input value="nodeJs" id="SiNodedotjs" className={s.input} type="checkbox" />
           <span>
             <SiNodedotjs className={s.icon} /> Node JS
+          </span>
+        </label>
+
+        <label htmlFor="SiSocketdotio" className={s.label}>
+          <input value="WebSocket" id="WebSocket" className={s.input} type="checkbox" />
+          <span>
+            <SiSocketdotio className={s.icon} /> WebSocket
           </span>
         </label>
       </div>
