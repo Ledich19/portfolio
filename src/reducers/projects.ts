@@ -113,7 +113,7 @@ const initialState: InitialState = {
       title: 'Server with GraphiQl',
       image: 'graph-ql-server.png',
       technologies: ['Prisma', 'Fastify', 'GraphQl'],
-      description: ' Is a playground/IDE for graphQL requests, has authorization with firebase',
+      description: 'My first work with graphql.Create a graphql solution for  restAPI.',
       gitLink: 'https://github.com/Ledich19/rsschool-nodejs-task-graphql/pull/1',
       deploy: '',
     },
