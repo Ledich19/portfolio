@@ -10,7 +10,10 @@ export type Technology =
   | 'GraphQl'
   | 'NodeJs'
   | 'WebSocket'
-  | 'vite';
+  | 'vite'
+  | 'Prisma'
+  | 'Fastify'
+  | 'Nest';
 
 export type Project = {
   title: string;

@@ -109,6 +109,14 @@ const initialState: InitialState = {
       gitLink: 'https://github.com/Ledich19/node-crud-api/pull/1',
       deploy: '',
     },
+    {
+      title: 'Server with GraphiQl',
+      image: 'graph-ql-server.png',
+      technologies: ['Prisma', 'Fastify', 'GraphQl'],
+      description: ' Is a playground/IDE for graphQL requests, has authorization with firebase',
+      gitLink: 'https://github.com/Ledich19/rsschool-nodejs-task-graphql/pull/1',
+      deploy: '',
+    },
   ],
 };
 

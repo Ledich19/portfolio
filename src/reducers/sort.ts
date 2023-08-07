@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Technology } from '../app/types';
 
 type InitialState = {
   [key: string]: boolean;
@@ -18,6 +17,8 @@ const initialState: InitialState = {
   NodeJs: false,
   WebSocket: false,
   vite: false,
+  Prisma: false,
+  Nest: false,
 };
 
 const technologiesSlice = createSlice({

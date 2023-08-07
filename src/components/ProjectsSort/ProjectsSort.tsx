@@ -9,6 +9,8 @@ import {
   SiGraphql,
   SiNodedotjs,
   SiSocketdotio,
+  SiPrisma,
+  SiNestjs,
 } from 'react-icons/si';
 import { FaSortUp, FaSortDown } from 'react-icons/fa';
 import s from './ProjectsSort.module.scss';
@@ -158,13 +160,41 @@ const ProjectsSort = () => {
           <input
             checked={filtersState.WebSocket}
             name="WebSocket"
-            id="WebSocket"
+            id="SiSocketdotio"
             onChange={handleCheck}
             className={s.input}
             type="checkbox"
           />
           <span>
             <SiSocketdotio className={s.icon} /> WebSocket
+          </span>
+        </label>
+
+        <label htmlFor="SiPrisma" className={s.label}>
+          <input
+            checked={filtersState.Prisma}
+            name="Prisma"
+            id="SiPrisma"
+            onChange={handleCheck}
+            className={s.input}
+            type="checkbox"
+          />
+          <span>
+            <SiPrisma className={s.icon} /> Prisma
+          </span>
+        </label>
+
+        <label htmlFor="iNestjs" className={s.label}>
+          <input
+            checked={filtersState.Nest}
+            name="Nest"
+            id="iNestjs"
+            onChange={handleCheck}
+            className={s.input}
+            type="checkbox"
+          />
+          <span>
+            <SiNestjs className={s.icon} /> Nest
           </span>
         </label>
       </div>
