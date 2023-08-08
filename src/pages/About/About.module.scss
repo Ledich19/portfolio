@@ -1,13 +1,15 @@
 $bgColor: #011627;
 $textColor: #607b96;
 
-.projects {
+.about {
   background: #011627;;
   display: flex;
   flex: 1 1 auto;
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-
 }
-
+.container{
+  display: flex;
+  flex: 1 1 auto;
+}

@@ -1,13 +1,16 @@
+import AboutCodeExample from '../../components/AboutCodeExample/AboutCodeExample';
 import AboutSort from '../../components/AboutSort/AboutSort';
-import ProjectBoard from '../../components/ProjectBoard/ProjectBoard';
-import ProjectsSort from '../../components/ProjectsSort/ProjectsSort';
+import AboutText from '../../components/AboutText/AboutText';
 import s from './About.module.scss';
 
 const About = () => {
   return (
-    <div className={s.projects}>
+    <div className={s.about}>
       <AboutSort />
-      <ProjectBoard />
+      <div className={s.container}>
+        <AboutText />
+        <AboutCodeExample />
+      </div>
     </div>
   );
 };
