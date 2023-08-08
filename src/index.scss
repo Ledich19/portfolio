@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
 
-$bgColor: #011627;
-$textColor: #607b96;
 * {
   box-sizing: border-box;
 }
@@ -22,8 +20,11 @@ $textColor: #607b96;
   --textColor: #607b96;
   --activeColor: #ffffff;
   --blueColor: #4d5bce;
-  --grinColor: #43d9ad;
+  --greenColor: #43d9ad;
   --redColor: #e99287;
+  --underlineColor: #fea55f;
+  --btnColor: #1c2b3a;
+  --btnHoverColor:#2d465e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,7 +40,7 @@ body {
   min-height: 100vh;
   font-size: 14px;
   font-family: 'Fira Code', monospace;
-  color: $textColor;
+  color: var(--textColor);
   background-image: url(./assets/bg/brett-ritchie-1vKTnwLMdqs-unsplash.jpg);
 }
 

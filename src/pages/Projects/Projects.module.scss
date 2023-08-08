@@ -1,8 +1,5 @@
-$bgColor: #011627;
-$textColor: #607b96;
-
 .projects {
-  background: #011627;;
+  background: var(--bgColor);
   display: flex;
   flex: 1 1 auto;
   box-sizing: border-box;

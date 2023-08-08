@@ -1,11 +1,10 @@
-$bgColor: #011627;
-$textColor: #607b96;
-$activeColor: #ffffff;
+
+
 
 .board {
   flex: 1 1 auto;
   position: relative;
-  border-right: solid 1px $textColor;
+  border-right: solid 1px var(--textColor);
 }
 .wrapper{
   padding: 50px;
@@ -23,7 +22,7 @@ $activeColor: #ffffff;
   width: 100%;
   padding: 10px 22px;
   font-size: 1rem;
-  background: $bgColor;
-  border-bottom: solid 1px $textColor;
+  background: var(--bgColor);
+  border-bottom: solid 1px var(--textColor);
   //z-index: 999;
 }

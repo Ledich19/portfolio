@@ -1,6 +1,5 @@
-$bgColor: #011627;
-$textColor: #607b96;
-$activeColor: #ffffff;
+
+
 
 .titleBlock {
   width: 100%;
@@ -18,20 +17,20 @@ $activeColor: #ffffff;
   user-select: none;
 }
 .open {
-  color: $activeColor;
+  color: var(--activeColor);
   transition: all 0.5s linear;
 }
 .close {
-  color: #607b96;
+  color: var(--textColor);
   transition: all 0.5s linear;
 }
 .title {
   .titleText {
-    color: $textColor;
+    color: var(--textColor);
   }
 }
 .title_active {
-  color: $activeColor;
+  color: var(--activeColor);
 }
 .elementsList {
   transition: all 0.5s linear;

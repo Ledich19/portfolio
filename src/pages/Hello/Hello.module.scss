@@ -1,11 +1,8 @@
-$mainBgColor: #011627;
-$textColor: #607b96;
-
 .hello {
-  border-left: solid 1px $textColor;
-  border-right: solid 1px $textColor;
+  border-left: solid 1px var(--textColor);
+  border-right: solid 1px var(--textColor);
   user-select: none;
-  background: $mainBgColor;
+  background: var(--bgColor);
   color: white;
   font-family: 'Fira Code';
   font-style: normal;
@@ -30,7 +27,7 @@ $textColor: #607b96;
   line-height: 81px;
 }
 .position {
-  color: #4d5bce;
+  color: var(--blueColor);
   font-family: 'Fira Code';
   font-style: normal;
   font-weight: 450;
@@ -39,15 +36,16 @@ $textColor: #607b96;
   margin-bottom: 80px;
 }
 .git {
-  color: #607b96;
+  color: var(--textColor);
   margin-bottom: 10px;
 }
-.const {
-  color: #4d5bce;
+.iconRed {
+  color: var(--redColor);
 }
-.variable {
-  color: #43d9ad;
+.iconGreen {
+  color: var(--greenColor);
 }
-.link {
-  color: #e99287;
+.iconBlue {
+  color: var(--blueColor);
 }
+

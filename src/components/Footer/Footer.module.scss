@@ -1,43 +1,38 @@
-$footerBgColor: #011627;
-$footerTextColor: #607b96;
-$footerActiveColor: #ffffff;
-
 .footer {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $footerTextColor;
-  border: solid 1px $footerTextColor;
-  border-radius: 0 0 10px 10px ;
-
+  color: var(--textColor);
+  border: solid 1px var(--textColor);
+  border-radius: 0 0 10px 10px;
 
   font-size: 1rem;
   width: 100%;
-  background-color: $footerBgColor;
+  background-color: var(--bgColor);
   box-sizing: border-box;
   flex: 0 0 auto;
 }
-.contacts{
+.contacts {
   display: flex;
   align-items: center;
 }
-.link{
+.link {
   cursor: pointer;
   display: inline-block;
   height: 100%;
   padding: 17px 22px;
-  border-right: solid 1px $footerTextColor;
-  color: $footerTextColor;
+  border-right: solid 1px var(--textColor);
+  color: var(--textColor);
 }
-.text{
-  border-right: solid 1px $footerTextColor;
+.text {
+  border-right: solid 1px var(--textColor);
   padding: 17px 22px;
 }
-.icon{
+.icon {
   font-size: 1.2rem;
   //padding: 17px 22px;
 }
-.git{
-  border-left: solid 1px $footerTextColor;
+.git {
+  border-left: solid 1px var(--textColor);
 }

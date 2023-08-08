@@ -1,21 +1,15 @@
-$headerBgColor: #011627;
-$headerTextColor: #607b96;
-$headerActiveColor: #ffffff;
 .item {
   flex: 0 1 auto;
   width: 350px;
-  // min-width: 300px;
-  // max-width: 349px;
   margin-bottom: 40px;
 }
 .title {
   font-size: 1rem;
 }
 .count {
-  color: #4d5bce;
+  color: var(--blueColor);
 }
-.name {
-}
+
 .block {
   flex: 1 1 auto;
   position: relative;
@@ -23,7 +17,7 @@ $headerActiveColor: #ffffff;
 flex-direction: column;
 
   margin-top: 10px;
-  border: solid 1px $headerTextColor;
+  border: solid 1px var(--textColor);
   height: 100%;
   border-radius: 10px;
 }
@@ -31,7 +25,6 @@ flex-direction: column;
   height: 50%;
   border-radius: 10px 10px 0 0;
   position: relative;
-  // flex: 1 1 auto;
   height: 200px;
   width: 100%;
 }
@@ -47,10 +40,9 @@ p{
   padding: 0;
 }
 .technologies{
-  color:$headerActiveColor;
+  color:var(--activeColor);
 }
 .buttonBlock{
-  //position: absolute;
   margin-top: 20px;
   top: 0;
   right: 0;
@@ -68,12 +60,12 @@ p{
   right: 56.8%;
   top: 77.91%;
   bottom: 10.02%;
-  background: #1c2b3a;
-  color: $headerTextColor;
+  background: var(--btnColor);
+  color: var(--textColor);
   text-decoration: none;
   border-radius: 8px;
   &:hover{
-    background: #2d465e;
+    background: var(--btnHoverColor);
   }
 }
 

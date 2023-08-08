@@ -1,9 +1,5 @@
-$bgColor: #011627;
-$textColor: #607b96;
-$activeColor: #ffffff;
-
 .titleBlock {
-  border-bottom: solid 1px $textColor;
+  border-bottom: solid 1px var(--textColor);
   width: 100%;
   padding: 10px 22px;
   display: flex;
@@ -17,15 +13,15 @@ $activeColor: #ffffff;
   border: none;
 }
 .open {
-  color: $activeColor;
+  color: var(--activeColor);
   transition: all 0.5s linear;
 }
 .close {
-  color: #607b96;
+  color: var(--textColor);
   transition: all 0.5s linear;
 }
 .title_active {
-  color: $activeColor;
+  color: var(--activeColor);
 }
 .elementsList {
   transition: all 0.5s linear;
@@ -34,7 +30,7 @@ $activeColor: #ffffff;
   display: none;
 }
 .elementsList_active {
-  border-bottom: solid 1px $textColor;
+  border-bottom: solid 1px var(--textColor);
   transition: all 0.5s linear;
   display: flex;
   padding: 0 22px;

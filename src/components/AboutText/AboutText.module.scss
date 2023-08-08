@@ -1,29 +1,15 @@
-$bgColor: #011627;
-$textColor: #607b96;
-$activeColor: #ffffff;
 .container{
   flex-grow: 1;
-  //padding: 22px;
-  border-right: solid 1px $textColor;
+  border-right: solid 1px var(--textColor);
 }
-.list {
-  // flex: 0 1 auto;
-  // min-width: 245px;
-  // box-sizing: border-box;
-  // height: 100%;
-  // overflow-x: hidden;
-  // border-left: solid 1px $textColor;
-  // border-right: solid 1px $textColor;
-  // display: flex;
-  // flex-direction: column;
-  // font-size: 1rem;
-}
+
 .iconRed {
-  color: #e99287;
+  color: var(--redColor);
 }
 .iconGreen {
-  color: #43d9ad;
+  color: var(--greenColor);
 }
 .iconBlue {
-  color: #3a49a4;
+  color: var(--blueColor);
 }
+
