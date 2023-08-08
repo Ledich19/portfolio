@@ -4,6 +4,7 @@ import Layout from './pages/Layout/Layout';
 import Hello from './pages/Hello/Hello';
 import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
+import AboutText from './components/AboutText/AboutText';
 
 const App = () => {
   return (
@@ -11,7 +12,11 @@ const App = () => {
       <Route path="*" element={<Layout />}>
         <Route index element={<Hello />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<About />}>
+          <Route path="bio" element={<AboutText />} />
+          <Route path="university" element={<AboutText />} />
+          <Route path="courses" element={<AboutText />} />
+        </Route>
         <Route path="404" element={<ErrorPage />} />
         <Route path="*" element={<Navigate to="404" />} />
       </Route>

@@ -3,38 +3,21 @@ import s from './AboutSort.module.scss';
 
 import DropList from '../DropList/DropList';
 import DropListInner from '../DropListInner/DropListInner';
+import DropListButton from '../DropListButton/DropListButton';
 
 const AboutSort = () => {
   return (
     <div className={s.list}>
       <DropList title="personal-info">
         <>
-          <DropListInner title="bio" icon={<MdFolder className={s.iconRed} />}>
-            <span>
-              <MdMail className={s.icon} />{' '}
-              <a href="mailto:ledich19@gmail.com">ledich19@gmail.com</a>
-            </span>
-            <span>
-              <MdPhone className={s.icon} /> <a href="tel:+38096766040">+38-096-7660409</a>
-            </span>
-          </DropListInner>
+          <DropListButton isArrow title="bio" icon={<MdFolder className={s.iconRed} />} />
           <DropListInner title="interests" icon={<MdFolder className={s.iconGreen} />}>
-            <span>
-              <MdMail className={s.icon} />{' '}
-              <a href="mailto:ledich19@gmail.com">ledich19@gmail.com</a>
-            </span>
-            <span>
-              <MdPhone className={s.icon} /> <a href="tel:+38096766040">+38-096-7660409</a>
-            </span>
+            <DropListButton title="university" icon={<MdAssignment className={s.icon} />} />
+            <DropListButton title="courses" icon={<MdAssignment className={s.icon} />} />
           </DropListInner>
-
           <DropListInner title="education" icon={<MdFolder className={s.iconBlue} />}>
-            <span>
-              <MdAssignment className={s.icon} /> <span>university</span>
-            </span>
-            <span>
-              <MdAssignment className={s.icon} /> <span>courses</span>
-            </span>
+            <DropListButton title="university" icon={<MdAssignment className={s.icon} />} />
+            <DropListButton title="courses" icon={<MdAssignment className={s.icon} />} />
           </DropListInner>
         </>
       </DropList>

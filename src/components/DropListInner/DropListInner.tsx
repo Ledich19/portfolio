@@ -4,7 +4,7 @@ import { FaAngleRight, FaAngleDown } from 'react-icons/fa';
 import s from './DropListInner.module.scss';
 
 type DropListInnerProperty = {
-  children: ReactNode;
+  children?: ReactNode;
   icon: ReactNode;
   title: string;
 };
@@ -31,6 +31,10 @@ const DropListInner = ({ children, title, icon }: DropListInnerProperty) => {
       <div className={visible ? s.elementsList : s.elementsList_active}>{children}</div>
     </>
   );
+};
+
+DropListInner.defaultProps = {
+  children: undefined,
 };
 
 export default DropListInner;

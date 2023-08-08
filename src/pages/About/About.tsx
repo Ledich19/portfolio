@@ -1,6 +1,6 @@
+import { Outlet } from 'react-router-dom';
 import AboutCodeExample from '../../components/AboutCodeExample/AboutCodeExample';
 import AboutSort from '../../components/AboutSort/AboutSort';
-import AboutText from '../../components/AboutText/AboutText';
 import s from './About.module.scss';
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
     <div className={s.about}>
       <AboutSort />
       <div className={s.container}>
-        <AboutText />
+        <Outlet />
         <AboutCodeExample />
       </div>
     </div>
