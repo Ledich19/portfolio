@@ -34,6 +34,7 @@ $activeColor: #ffffff;
   display: none;
 }
 .elementsList_active {
+  border-bottom: solid 1px $textColor;
   transition: all 0.5s linear;
   display: flex;
   padding: 0 22px;

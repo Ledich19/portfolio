@@ -1,14 +1,16 @@
 import { useState, ReactNode } from 'react';
-import { FaSortUp, FaSortDown } from 'react-icons/fa';
+import { FaAngleRight, FaAngleDown } from 'react-icons/fa';
+
 import s from './DropListInner.module.scss';
 
 type DropListInnerProperty = {
   children: ReactNode;
+  icon: ReactNode;
   title: string;
 };
 
-const DropListInner = ({ children, title }: DropListInnerProperty) => {
-  const [visible, setVisible] = useState(false);
+const DropListInner = ({ children, title, icon }: DropListInnerProperty) => {
+  const [visible, setVisible] = useState(true);
 
   const toggleVisible = () => {
     setVisible(!visible);
@@ -16,19 +18,15 @@ const DropListInner = ({ children, title }: DropListInnerProperty) => {
 
   return (
     <>
-      <div
-        tabIndex={0}
-        role="button"
-        onKeyDown={toggleVisible}
-        onClick={toggleVisible}
-        className={s.titleBlock}
-      >
-        <button type="button" className={s.button}>
+      <div className={s.titleBlock}>
+        <button onClick={toggleVisible} type="button" className={s.button}>
           <span>
-            {!visible ? <FaSortDown className={s.open} /> : <FaSortUp className={s.close} />}
+            {!visible ? <FaAngleDown className={s.open} /> : <FaAngleRight className={s.close} />}
+          </span>
+          <span className={visible ? s.title : s.title_active}>
+            {icon} <span className={s.titleText}>{title}</span>
           </span>
         </button>
-        <span className={visible ? s.title : s.title_active}>{title}</span>
       </div>
       <div className={visible ? s.elementsList : s.elementsList_active}>{children}</div>
     </>

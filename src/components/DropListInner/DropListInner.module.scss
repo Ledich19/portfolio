@@ -3,18 +3,19 @@ $textColor: #607b96;
 $activeColor: #ffffff;
 
 .titleBlock {
-  border-bottom: solid 1px $textColor;
   width: 100%;
-  padding: 10px 22px;
   display: flex;
   justify-content: flex-start;
-  cursor: pointer;
+
   user-select: none;
 }
 .button {
   transition: all 0.5s linear;
   background: none;
   border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
 }
 .open {
   color: $activeColor;
@@ -24,20 +25,23 @@ $activeColor: #ffffff;
   color: #607b96;
   transition: all 0.5s linear;
 }
+.title {
+  .titleText {
+    color: $textColor;
+  }
+}
 .title_active {
   color: $activeColor;
 }
 .elementsList {
   transition: all 0.5s linear;
-  padding: 0 22px;
-  padding-top: 10px;
+  padding: 0 0 0 22px;
   display: none;
 }
 .elementsList_active {
   transition: all 0.5s linear;
   display: flex;
-  padding: 0 22px;
-  padding-top: 10px;
+  padding: 0 0 0 22px;
   flex-direction: column;
   font-size: 1rem;
 }
