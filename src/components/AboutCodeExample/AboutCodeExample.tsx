@@ -1,26 +1,15 @@
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierSulphurpoolDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import s from './AboutCodeExample.module.scss';
+import CodeExampleItem from './CodeExampleItem/CodeExampleItem';
+import { useAppSelector } from '../../app/hooks';
 
 const AboutCodeExample = () => {
-  const codeString = `
-  const AboutCodeExample = () => {
-    const codeString = '(num) => num + 1';
-    return (
-      <div className={s.list}>
-        Lorem ipsum dolor sit, amet consectetur .
-        <SyntaxHighlighter language="javascript" style={docco}>
-          {codeString}
-        </SyntaxHighlighter>
-      </div>
-    );
-  };
-  `;
+  const { exampleCode } = useAppSelector((state) => state.projects);
+
   return (
     <div className={s.container}>
-      <SyntaxHighlighter language="javascript" style={atelierSulphurpoolDark}>
-        {codeString}
-      </SyntaxHighlighter>
+      {exampleCode.map((repo) => (
+        <CodeExampleItem key={repo.repository} repoName={repo.repository} code={repo.codeExample} />
+      ))}
     </div>
   );
 };

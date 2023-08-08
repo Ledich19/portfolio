@@ -23,3 +23,18 @@ export type Project = {
   gitLink: string;
   deploy: string;
 };
+export type Example = {
+  repository: string;
+  codeExample: string;
+};
+
+export interface OwnerInfo {
+  avatar_url: string;
+  login: string;
+}
+
+export interface RepoInfo {
+  owner: OwnerInfo;
+  created_at: string;
+  stargazers_count: number;
+}

@@ -1,11 +1,9 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
 
 $bgColor: #011627;
 $textColor: #607b96;
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,6 +17,13 @@ $textColor: #607b96;
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
   background-color: #eae9e9;
+
+  --bgColor: #011627;
+  --textColor: #607b96;
+  --activeColor: #ffffff;
+  --blueColor: #4d5bce;
+  --grinColor: #43d9ad;
+  --redColor: #e99287;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,7 +42,6 @@ body {
   color: $textColor;
   background-image: url(./assets/bg/brett-ritchie-1vKTnwLMdqs-unsplash.jpg);
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {

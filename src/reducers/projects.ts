@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Project } from '../app/types';
+import { Example, Project } from '../app/types';
 
 type InitialState = {
   projects: Project[];
+  exampleCode: Example[];
 };
 
 const initialState: InitialState = {
@@ -116,6 +117,54 @@ const initialState: InitialState = {
       description: 'My first work with graphql.Create a graphql solution for  restAPI.',
       gitLink: 'https://github.com/Ledich19/rsschool-nodejs-task-graphql/pull/1',
       deploy: '',
+    },
+  ],
+  exampleCode: [
+    {
+      repository: 'node-nodejs-basics',
+      codeExample: `
+    const AboutCodeExample = () => {
+      const codeString = '(num) => num + 1';
+      return (
+        <div className={s.list}>
+          Lorem ipsum dolor sit, amet consectetur .
+          <SyntaxHighlighter language="javascript" style={docco}>
+            {codeString}
+          </SyntaxHighlighter>
+        </div>
+      );
+    };
+  
+    function createStyleObject(classNames, style) {
+      return classNames.reduce((styleObject, className) => {
+        return {...styleObject, ...style[className]};
+      }, {});
+    }
+    
+    `,
+    },
+    {
+      repository: 'rss_online-store',
+      codeExample: `
+    const AboutCodeExample = () => {
+      const codeString = '(num) => num + 1';
+      return (
+        <div className={s.list}>
+          Lorem ipsum dolor sit, amet consectetur .
+          <SyntaxHighlighter language="javascript" style={docco}>
+            {codeString}
+          </SyntaxHighlighter>
+        </div>
+      );
+    };
+  
+    function createStyleObject(classNames, style) {
+      return classNames.reduce((styleObject, className) => {
+        return {...styleObject, ...style[className]};
+      }, {});
+    }
+    
+    `,
     },
   ],
 };

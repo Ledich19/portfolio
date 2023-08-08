@@ -1,28 +1,10 @@
-$bgColor: #011627;
-$textColor: #607b96;
-$activeColor: #ffffff;
 .container{
   flex-grow: 1;
+  flex: 0 0 auto;
   padding: 22px;
-}
-.list {
-  // flex: 0 1 auto;
-  // min-width: 245px;
-  // box-sizing: border-box;
-  // height: 100%;
-  // overflow-x: hidden;
-  // border-left: solid 1px $textColor;
-  // border-right: solid 1px $textColor;
-  // display: flex;
-  // flex-direction: column;
-  // font-size: 1rem;
-}
-.iconRed {
-  color: #e99287;
-}
-.iconGreen {
-  color: #43d9ad;
-}
-.iconBlue {
-  color: #3a49a4;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  border-right: solid 1px var(--textColor);
+  font-size: 1rem;
 }
