@@ -16,11 +16,14 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
   useEffect(() => {
     const fetchRepoInfo = async () => {
       try {
-        const response = await fetch(`https://api.github.com/repos/ledich19/${repoName}`, {
-          headers: {
-            Authorization: 'Bearer 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',
-          },
-        });
+        const response = await fetch(
+          `https://api.github.com/repos/${import.meta.env.VITE_GIT_USERNAME}/${repoName}`,
+          {
+            headers: {
+              Authorization: `Bearer ${import.meta.env.VITE_GIT_API_KEY}`,
+            },
+          }
+        );
         const data = await response.json();
         setRepoInfo(data);
       } catch (error) {
@@ -58,7 +61,7 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
         </div>
       </div>
 
-      <SyntaxHighlighter language="jsx" style={coldarkDark}>
+      <SyntaxHighlighter wrapLongLines language="jsx" style={coldarkDark}>
         {code}
       </SyntaxHighlighter>
     </div>
