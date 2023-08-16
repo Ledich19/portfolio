@@ -4,8 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "env-cmd -f .env npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "build:s": "tsc && vite build --outDir=../server/build --emptyOutDir",
