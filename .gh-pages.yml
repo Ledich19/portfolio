@@ -1,3 +1,0 @@
-script:
-  - npm install
-  - REACT_APP_API_KEY=${{ secrets.VITE_GIT_API_KEY }} npm run build
