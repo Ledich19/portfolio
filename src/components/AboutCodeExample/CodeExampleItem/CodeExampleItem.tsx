@@ -15,6 +15,8 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
   const [repoInfo, setRepoInfo] = useState<RepoInfo | null>(null);
   useEffect(() => {
     const fetchRepoInfo = async () => {
+      console.log(process.env.VITE_GIT_USERNAME);
+
       try {
         const response = await fetch(
           `https://api.github.com/repos/${process.env.VITE_GIT_USERNAME}/${repoName}`,
