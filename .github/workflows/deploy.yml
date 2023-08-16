@@ -26,6 +26,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.VITE_GIT_API_KEY }}
-          publish_dir: ./build
+        env:
+          VITE_GIT_API_KEY: ${{ secrets.VITE_GIT_API_KEY }}
+        
