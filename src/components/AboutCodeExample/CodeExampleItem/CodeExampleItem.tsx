@@ -14,6 +14,8 @@ type CodeExampleItemProperty = {
 const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
   const [repoInfo, setRepoInfo] = useState<RepoInfo | null>(null);
   useEffect(() => {
+    console.log('ENV', import.meta.env.VITE_GIT_API_KEY);
+    console.log('ENV2', import.meta.env.VITE_GIT_USERNAME);
     const fetchRepoInfo = async () => {
       try {
         const response = await fetch(
