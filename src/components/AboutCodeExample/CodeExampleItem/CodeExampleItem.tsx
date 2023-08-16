@@ -17,10 +17,10 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
     const fetchRepoInfo = async () => {
       try {
         const response = await fetch(
-          `https://api.github.com/repos/${import.meta.env.VITE_GIT_USERNAME}/${repoName}`,
+          `https://api.github.com/repos/${process.env.VITE_GIT_USERNAME}/${repoName}`,
           {
             headers: {
-              Authorization: `Bearer ${import.meta.env.VITE_GIT_API_KEY}`,
+              Authorization: `Bearer ${process.env.VITE_GIT_API_KEY}`,
             },
           }
         );
