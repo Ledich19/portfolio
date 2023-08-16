@@ -23,7 +23,7 @@ jobs:
 
       - name: Build project
         run: npm run build
-
+          echo "VITE_GIT_API_KEY=${{ secrets.VITE_GIT_API_KEY }}" >> $GITHUB_ENV
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
