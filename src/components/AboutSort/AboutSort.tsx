@@ -11,10 +11,10 @@ const AboutSort = () => {
       <DropList title="personal-info">
         <>
           <DropListButton isArrow title="bio" icon={<MdFolder className={s.iconRed} />} />
-          <DropListInner title="interests" icon={<MdFolder className={s.iconGreen} />}>
+          {/* <DropListInner title="interests" icon={<MdFolder className={s.iconGreen} />}>
             <DropListButton title="university" icon={<MdAssignment className={s.icon} />} />
             <DropListButton title="courses" icon={<MdAssignment className={s.icon} />} />
-          </DropListInner>
+          </DropListInner> */}
           <DropListInner title="education" icon={<MdFolder className={s.iconBlue} />}>
             <DropListButton title="university" icon={<MdAssignment className={s.icon} />} />
             <DropListButton title="courses" icon={<MdAssignment className={s.icon} />} />

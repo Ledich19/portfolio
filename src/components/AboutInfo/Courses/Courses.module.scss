@@ -1,0 +1,17 @@
+.container{
+  padding: 22px;
+  flex-grow: 1;
+  border-right: solid 1px var(--textColor);
+  overflow: auto;
+}
+
+.iconRed {
+  color: var(--redColor);
+}
+.iconGreen {
+  color: var(--greenColor);
+}
+.iconBlue {
+  color: var(--blueColor);
+}
+

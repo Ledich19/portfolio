@@ -38,3 +38,9 @@ export interface RepoInfo {
   created_at: string;
   stargazers_count: number;
 }
+export interface CertificateType {
+  school: string;
+  technologies: Technology[];
+  link: string;
+  img: string;
+}

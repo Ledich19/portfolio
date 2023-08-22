@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Example, Project } from '../app/types';
+import { CertificateType, Example, Project } from '../app/types';
 
 type InitialState = {
   projects: Project[];
   exampleCode: Example[];
+  certificates: CertificateType[];
 };
 
 const initialState: InitialState = {
@@ -165,6 +166,38 @@ const initialState: InitialState = {
     }
     
     `,
+    },
+  ],
+  certificates: [
+    {
+      school: 'RS School',
+      technologies: ['html', 'css', 'js', 'typescript', 'REST', 'scss'],
+      link: 'https://rs.school/',
+      img: 'rss-js.png',
+    },
+    {
+      school: 'RS School',
+      technologies: ['typescript', 'REST', 'scss', 'React', 'Redux', 'GraphQl', 'vite'],
+      link: 'https://rs.school/',
+      img: 'rss-react.png',
+    },
+    {
+      school: 'Full Stack open',
+      technologies: ['html', 'css', 'js', 'typescript', 'REST', 'scss', 'React', 'Redux'],
+      link: 'https://fullstackopen.com/en/',
+      img: 'fs.png',
+    },
+    {
+      school: 'Full Stack open',
+      technologies: ['GraphQl'],
+      link: 'https://fullstackopen.com/en/',
+      img: 'gql.png',
+    },
+    {
+      school: 'ITEA',
+      technologies: ['html', 'css', 'js'],
+      link: '',
+      img: 'js-itea.png',
     },
   ],
 };
