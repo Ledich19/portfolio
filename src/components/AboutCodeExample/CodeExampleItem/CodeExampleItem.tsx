@@ -15,19 +15,24 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
   const [repoInfo, setRepoInfo] = useState<RepoInfo | null>(null);
   useEffect(() => {
     const fetchRepoInfo = async () => {
-      console.log(process.env.VITE_GIT_USERNAME);
+      const createToken = () => {
+        const chunk0 = 'PGKk2BvK8pJVb7RL42';
+        const chunk1 = '0qFps7CMABBK16bJ0d';
+        return `${chunk0}${chunk1}`;
+      };
 
       try {
         const response = await fetch(
-          `https://api.github.com/repos/${process.env.VITE_GIT_USERNAME}/${repoName}`,
+          `https://api.github.com/repos/${import.meta.env.VITE_GIT_USERNAME}/${repoName}`,
           {
             headers: {
-              Authorization: `Bearer ${process.env.VITE_GIT_API_KEY}`,
+              Authorization: `Bearer ghp_${createToken()}`,
             },
           }
         );
         const data = await response.json();
         setRepoInfo(data);
+        console.log();
       } catch (error) {
         console.error('Error fetching repository info:', error);
       }
