@@ -6,14 +6,21 @@ const Header = () => {
     <header className={s.header}>
       <nav className={s.navigation}>
         <ul className={s.list}>
-          <li className={s.name}>oleksandr-chumachenko</li>
+          <li className={s.name}>
+            <NavLink to="/about/bio" className={s.navLink}>
+              oleksandr-chumachenko
+            </NavLink>
+          </li>
           <li className={s.item}>
             <NavLink to="/" className={(info) => (info.isActive ? s.activeLink : s.navLink)}>
               _hello
             </NavLink>
           </li>
           <li className={s.item}>
-            <NavLink to="/about" className={(info) => (info.isActive ? s.activeLink : s.navLink)}>
+            <NavLink
+              to="/about/bio"
+              className={(info) => (info.isActive ? s.activeLink : s.navLink)}
+            >
               _about-me
             </NavLink>
           </li>

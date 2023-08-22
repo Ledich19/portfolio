@@ -5,7 +5,7 @@ const Hello = () => {
     <div className={s.hello}>
       <div className={s.box}>
         Hi all. I am
-        <div className={s.name}>Aleksandr Chumachenko</div>
+        <div className={s.name}>Oleksandr Chumachenko</div>
         <div className={s.position}> &gt; Front-end developer</div>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <div className={s.git}> // you can also see it my Github page </div>
