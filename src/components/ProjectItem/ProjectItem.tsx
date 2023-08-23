@@ -35,9 +35,11 @@ const ProjectItem = ({ item, index }: Props) => {
             {description}
           </div>
           <div className={s.buttonBlock}>
-            <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
-              view-project
-            </a>
+            {deploy && (
+              <a className={s.button} rel="noreferrer" target="_blank" href={deploy}>
+                view-project
+              </a>
+            )}
 
             {gitLink && (
               <a className={s.button} rel="noreferrer" target="_blank" href={gitLink}>
