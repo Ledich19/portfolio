@@ -3,6 +3,9 @@
   flex-grow: 1;
   border-right: solid 1px var(--textColor);
   overflow: auto;
+  @media (max-width: 1500px) {
+    overflow:visible;
+  }
 }
 
 .iconRed {

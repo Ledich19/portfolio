@@ -46,7 +46,7 @@ const Header = () => {
           <span />
         </button>
       </nav>
-        <div className={`${open || s.burgerBlure}`} />
+      <div className={`${open || s.burgerBlure}`} />
     </header>
   );
 };
