@@ -24,7 +24,43 @@
   --redColor: #e99287;
   --underlineColor: #fea55f;
   --btnColor: #1c2b3a;
-  --btnHoverColor:#2d465e;
+  --btnHoverColor: #2d465e;
+  // /* Основные цвета */
+  // --primary-background-color: #ffffff;
+  // --primary-text-color: #333333;
+  // --primary-accent-color: #007bff;
+
+  // /* Шрифты */
+  // --heading-font: 'Helvetica', sans-serif;
+  // --text-font: 'Arial', sans-serif;
+
+  // /* Цвета элементов интерфейса */
+  // --button-color: #007bff;
+  // --link-color: #3498db;
+  // --divider-color: #dcdcdc;
+
+  // /* Цвета структурных элементов */
+  // --heading-color: #333333;
+  // --subheading-color: #555555;
+  // --footer-color: #666666;
+
+  // /* Цвета состояний */
+  // --success-color: #28a745;
+  // --warning-color: #ffc107;
+  // --error-color: #dc3545;
+
+  // /* Цвета форм и полей ввода */
+  // --field-background-color: #f5f5f5;
+  // --field-border-color: #cccccc;
+  // --field-text-color: #333333;
+
+  // /* Цвета меню и навигации */
+  // --menu-background-color: #f8f8f8;
+  // --active-item-color: #007bff;
+  // --normal-item-color: #333333;
+
+  // /* Цвет подсветки при наведении */
+  // --hover-color: #e0e0e0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -73,14 +109,14 @@ $md4: 479.98;
   height: 100vh;
   max-width: $maxWidhtConteiner + px;
   margin: 0 auto;
-  @media (max-width: #{$md1}px) {
-    //max-width: 970px;
-  }
-  @media (max-width: #{$md2}px) {
-    //max-width: 750px;
-  }
-  @media (max-width: #{$md3}px) {
-    //max-width: none;
-    padding: 0 10px;
-  }
+  // @media (max-width: #{$md1}px) {
+  //   //max-width: 970px;
+  // }
+  // @media (max-width: #{$md2}px) {
+  //   //max-width: 750px;
+  // }
+  // @media (max-width: #{$md3}px) {
+  //   //max-width: none;
+  //   padding: 0 10px;
+  // }
 }

@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Header.module.scss';
 
 const Header = () => {
+  const [open, setOpen] = useState(true);
   return (
     <header className={s.header}>
       <nav className={s.navigation}>
-        <ul className={s.list}>
+        <ul className={`${s.list} ${open || s.menuOpen}`}>
           <li className={s.name}>
             <NavLink to="/about/bio" className={s.navLink}>
               oleksandr-chumachenko
@@ -33,9 +35,18 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-
         <div className={s.contact}>_contact-me</div>
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className={`${s.burger} ${open || s.active}`}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </nav>
+        <div className={`${open || s.burgerBlure}`} />
     </header>
   );
 };
