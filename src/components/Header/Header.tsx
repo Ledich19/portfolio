@@ -35,7 +35,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className={s.contact}>_contact-me</div>
+        <div className={s.contact}>{/* _contact-me */}</div>
         <button
           type="button"
           onClick={() => setOpen(!open)}

@@ -16,8 +16,8 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
   useEffect(() => {
     const fetchRepoInfo = async () => {
       const createToken = () => {
-        const chunk0 = 'PGKk2BvK8pJVb7RL42';
-        const chunk1 = '0qFps7CMABBK16bJ0d';
+        const chunk0 = 'ghp_rhIUm8I2rKD2L4';
+        const chunk1 = 'zhaz1dYBCpJV7t8t2ohmiL';
         return `${chunk0}${chunk1}`;
       };
 
@@ -30,9 +30,11 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
             },
           }
         );
+        if (!response.ok) return;
         const data = await response.json();
+        console.log(response);
         setRepoInfo(data);
-        console.log();
+        console.log('----------------------------------');
       } catch (error) {
         console.error('Error fetching repository info:', error);
       }
