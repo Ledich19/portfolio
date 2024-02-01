@@ -119,6 +119,32 @@ const initialState: InitialState = {
       gitLink: 'https://github.com/Ledich19/rsschool-nodejs-task-graphql/pull/1',
       deploy: '',
     },
+
+    {
+      title: 'big grid',
+      image: 'three-grid.png',
+      technologies: ['THREEjs'],
+      description:
+        "There is a big grid which use shaders. It means that it uses video card and don't use processor. And can draw a very big grid.",
+      gitLink: 'https://github.com/Ledich19/THREE-JS/tree/main/shaders-grid',
+      deploy: 'https://ledich19.github.io/THREE-JS/shaders-grid/',
+    },
+    {
+      title: 'grid-smile',
+      image: 'three-smile.png',
+      technologies: ['THREEjs'],
+      description: 'use a 3D grid for show images',
+      gitLink: 'https://github.com/Ledich19/THREE-JS/tree/main/smiles',
+      deploy: 'https://ledich19.github.io/THREE-JS/smiles',
+    },
+    {
+      title: 'dots-beyonce',
+      image: 'dots-Beyonce.png',
+      technologies: ['THREEjs'],
+      description: '3D Beyoncé figurine disintegrates into dots when hovered over',
+      gitLink: 'https://github.com/Ledich19/THREE-JS/tree/main/dots-Beyonce',
+      deploy: 'https://ledich19.github.io/THREE-JS/dots-Beyonce/',
+    },
   ],
   exampleCode: [
     {

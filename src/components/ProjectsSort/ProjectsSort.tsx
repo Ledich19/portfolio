@@ -11,6 +11,7 @@ import {
   SiSocketdotio,
   SiPrisma,
   SiNestjs,
+  SiThreedotjs,
 } from 'react-icons/si';
 import { FaSortUp, FaSortDown } from 'react-icons/fa';
 import s from './ProjectsSort.module.scss';
@@ -195,6 +196,20 @@ const ProjectsSort = () => {
           />
           <span>
             <SiNestjs className={s.icon} /> Nest
+          </span>
+        </label>
+
+        <label htmlFor="THREEjs" className={s.label}>
+          <input
+            checked={filtersState.THREEjs}
+            name="THREEjs"
+            id="THREEjs"
+            onChange={handleCheck}
+            className={s.input}
+            type="checkbox"
+          />
+          <span>
+            <SiThreedotjs className={s.icon} /> THREE-Js
           </span>
         </label>
       </div>

@@ -32,9 +32,7 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
         );
         if (!response.ok) return;
         const data = await response.json();
-        console.log(response);
         setRepoInfo(data);
-        console.log('----------------------------------');
       } catch (error) {
         console.error('Error fetching repository info:', error);
       }
@@ -53,7 +51,11 @@ const CodeExampleItem = ({ repoName, code }: CodeExampleItemProperty) => {
     <div className={s.container}>
       <div className={s.repoInfo}>
         <div className={s.user}>
-          <img src={repoInfo?.owner.avatar_url} alt="user avatar" className={s.userPhoto} />
+          <img
+            src={repoInfo?.owner.avatar_url || 'img/67699125.jpg'}
+            alt="user avatar"
+            className={s.userPhoto}
+          />
           <div className={s.userText}>
             <a href="https://github.com/Ledich19" className={s.userName}>
               @{repoInfo?.owner.login}

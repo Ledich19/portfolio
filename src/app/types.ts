@@ -13,7 +13,8 @@ export type Technology =
   | 'vite'
   | 'Prisma'
   | 'Fastify'
-  | 'Nest';
+  | 'Nest'
+  | 'THREEjs';
 
 export type Project = {
   title: string;
