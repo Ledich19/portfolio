@@ -10,14 +10,16 @@
   padding: 50px 50px;
   overflow: auto;
   height: 100%;
-  @media (max-width: 1270px) { /* Пример: изменение макета для экранов с максимальной шириной 768 пикселей */
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Устанавливаем две колонки на узких экранах */
-    padding: 0 20px; /* Уменьшаем отступы по бокам */
+  @media (max-width: 1270px) { 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    padding: 0 20px;
+    padding-bottom: 50px;
   }
 
-  @media (max-width: 768px) { /* Пример: изменение макета для экранов с максимальной шириной 480 пикселей */
-    grid-template-columns: minmax(0, 1fr); /* Устанавливаем одну колонку на очень узких экранах */
-    padding: 0 10px; /* Уменьшаем отступы по бокам */
+  @media (max-width: 768px) { 
+    grid-template-columns: minmax(0, 1fr); 
+    padding: 0 10px; 
+    padding-bottom: 50px;
   }
 }
 
