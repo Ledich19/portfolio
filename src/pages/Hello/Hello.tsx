@@ -8,7 +8,7 @@ const Hello = () => {
         <div className={s.name}>Oleksandr Chumachenko</div>
         <div className={s.position}> &gt; Front-end developer</div>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-        <div className={s.git}> // you can also see it my Github page </div>
+        <div className={s.git}> // you can also see my Github page </div>
         <span className={s.const}>const </span>
         <span className={s.variable}>githubLink</span>
         <span> = </span>
